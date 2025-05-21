@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuerdos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="root">
+    <main class="fondo">
+      <div class="contenido">
+        <h1 class="titulo">¿Quieres ser mi San Valentín?</h1>
+        <img
+          src="https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif"
+          alt="San Valentín"
+          class="imagen"
+          width="400"
+          height="400"
+        >
+        <div class="botones">
+          <a href="index2.html" class="btn-si">Sí</a>
+          <button class="btn-no" id="btn-no">No</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Script para cambiar el texto del botón "No" -->
+  <script>
+    const frases = [
+      "¿Segura?",
+      "¿100% segura?",
+      "Presiona el otro botón",
+      "Confia en mi",
+      "Ya sabes, Eu sou Joss",
+      "Se que presionaras el otro jiji",
+    ];
+
+    let indice = 0;
+    const botonNo = document.getElementById("btn-no");
+
+    botonNo.addEventListener("click", () => {
+      botonNo.textContent = frases[indice];
+      indice = (indice + 1) % frases.length;
+    });
+  </script>
+</body>
+</html>

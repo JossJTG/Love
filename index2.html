@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Texto Neón + Carrusel + Carta</title>
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="neon-text">Nuestros recuerdos</h1>
+    <h2 class="neon-subtext">01/12/2024</h2>
+
+    <div class="main-layout">
+      <!-- Columna izquierda con imágenes -->
+      <div class="image-column">
+        <div class="carousel-container">
+          <div class="slider">
+            <div id="carouselTrack" class="slide-track">
+              <div class="slide"><img src="images/4.jpg" alt="Imagen 4"></div>
+              <div class="slide"><img src="images/5.jpg" alt="Imagen 5"></div>
+              <div class="slide"><img src="images/6.jpg" alt="Imagen 6"></div>
+              <div class="slide"><img src="images/7.jpg" alt="Imagen 7"></div>
+              <div class="slide"><img src="images/8.jpg" alt="Imagen 8"></div>
+              <div class="slide"><img src="images/9.jpg" alt="Imagen 9"></div>
+              <div class="slide"><img src="images/10.jpg" alt="Imagen 10"></div>
+              <div class="slide"><img src="images/11.jpg" alt="Imagen 11"></div>
+              <div class="slide"><img src="images/12.jpg" alt="Imagen 12"></div>
+              <div class="slide"><img src="images/13.jpg" alt="Imagen 13"></div>
+              <div class="slide"><img src="images/14.jpg" alt="Imagen 14"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha con la carta -->
+      <div class="text-column">
+        <div class="card-cover" id="card">
+          <div class="card-side card-front">
+            <h1 class="card-title">
+              <span class="card-title-secondary">Happy</span><br>
+              <span class="card-title-main">Valentine<span class="card-title-apostrophe">❤</span>s</span><br>
+              <span class="card-title-secondary">Day</span>
+            </h1>
+          </div>
+          <div class="card-side card-back">
+            <p class="letter-content">
+              Mi amor,
+
+                A veces no se como expresarme, pero sabes que siempre te hable con sinceridad y de corazon. Agradezco a Dios porque de una forma especial cruzó nuestros caminos, y me siento increíblemente afortunado de haberte encontrado. Me has mostrado que lo más importante no es lo que tenemos sino lo que sentimos y como lo demostramos.
+
+                Quiero que sepas que siempre estaré aquí para ti, tanto en los días buenos como en los momentos más dificiles. No importa lo que venga, sé que podemos enfrentarlo juntos.
+
+                Te amo mucho más de lo que puedes imaginar o las palabras puedan expresar, y me siento agradecido por cada momento que compartimos.
+
+                Con mucho amor, de tu niño ❤  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const card = document.getElementById('card');
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+  </script>
+</body>
+</html>
