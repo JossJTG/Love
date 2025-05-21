@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-  background-color: black;
+  background-image: url(./images/fondo2.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,11 +9,23 @@ body {
   padding-top: 10px;
   text-align: center;
   font-family: 'Arial', sans-serif;
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.83); /* Ajusta la opacidad aquí */
+  z-index: -1; /* Coloca detrás del contenido pero encima del fondo */
 }
 
 .container {
   width: 100%;
   padding: 0 20px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Título neón */
